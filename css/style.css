@@ -115,6 +115,14 @@ img{max-width:100%;display:block;}
 .doc__body h4{font-size:1.05rem;margin-bottom:.15rem;color:var(--ink);}
 .doc__body span{color:var(--slate);font-size:.9rem;}
 
+/* ---------- location map ---------- */
+.map-container{border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;box-shadow:0 18px 40px rgba(16,34,71,.1);}
+.map-container iframe{display:block;}
+.map-info{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;background:#fff;padding:2rem 1.8rem;border:1px solid var(--line);border-radius:var(--radius);}
+.map-info__item h4{font-size:1rem;margin-bottom:.8rem;color:var(--ink);}
+.map-info__item p{color:var(--slate);font-size:.95rem;margin:0;}
+.map-info__item a{color:var(--blue);}
+
 /* ---------- CTA band ---------- */
 .cta-band{background:linear-gradient(115deg,var(--navy-900),var(--navy-700));color:#fff;border-radius:24px;padding:3.5rem;text-align:center;}
 .cta-band h2{font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:.4em;}
@@ -155,10 +163,13 @@ img{max-width:100%;display:block;}
   .split{grid-template-columns:1fr;}
   .footer__grid{grid-template-columns:1fr 1fr;}
   .hero__inner{padding:4rem 0 4.5rem;}
+  .map-info{grid-template-columns:1fr;}
 }
 @media(max-width:540px){
   .cards,.team,.footer__grid{grid-template-columns:1fr;}
   .cta-band{padding:2.2rem 1.5rem;}
   .hero__cta{flex-direction:column;align-items:stretch;}
   .btn{justify-content:center;}
+  .map-container{margin-bottom:2rem;}
+  .map-info{padding:1.5rem;gap:1.5rem;}
 }
